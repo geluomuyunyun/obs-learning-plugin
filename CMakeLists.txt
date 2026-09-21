@@ -34,10 +34,7 @@ if(ENABLE_QT)
   )
 endif()
 
-target_sources(${CMAKE_PROJECT_NAME} PRIVATE 
-    src/plugin-main.c 
-    src/invert-filter.c
-)
+target_sources(${CMAKE_PROJECT_NAME} PRIVATE src/plugin-main.c src/invert-filter.c)
 
 if(MSVC)
   target_compile_options(${CMAKE_PROJECT_NAME} PRIVATE /utf-8)
